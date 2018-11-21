@@ -14,3 +14,15 @@ EOF
 ```bash
 systemctl restart docker.service
 ```
+
+2. 在运行kubespary之前，先执行这三个脚本提前准备好镜像。
+```bash
+bash pull_gcr_io.sh
+```
+```bash
+bash pull_k8s_gcr_io.sh
+```
+```bash
+bash pull_quay_io.sh
+```
+

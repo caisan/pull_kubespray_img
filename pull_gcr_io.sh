@@ -5,7 +5,7 @@ set -o pipefail
 
 # kuberspay v2.6.0版本
 
-kube_version=v1.10.4
+kube_version=v1.10.3
 dns_version=1.14.10
 pod_infra_version=3.0
 kubednsautoscaler_version=1.1.2
@@ -17,7 +17,7 @@ ANJIA_URL=anjia0532
 
 images=(
 hyperkube:${kube_version}
-pause-amd64:${kube_pause_version}
+pause-amd64:${pod_infra_version}
 k8s-dns-kube-dns-amd64:${dns_version}
 k8s-dns-dnsmasq-nanny-amd64:${dns_version}
 k8s-dns-sidecar-amd64:${dns_version}
